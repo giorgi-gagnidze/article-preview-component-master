@@ -17,7 +17,7 @@ This page done with pure HTML, CSS and JS DOM manipulation. It was hard for me, 
 
 ### Screenshot
 
-![Page screenshot](./screenshoot.jpg)
+![Page screenshot](./screenshoot.JPG)
 
 ### Links
 
