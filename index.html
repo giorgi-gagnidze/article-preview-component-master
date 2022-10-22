@@ -5,25 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <!-- Favicon link -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Google fonts link -->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS file link -->
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <main class="main-container">
+      <img
+        src="./images/drawers.jpg"
+        alt="Table with pictures and vase on it"
+        class="main-img"
+      />
+      <div class="second-container">
+        <div class="article-container">
+          <h1 class="article-heading">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="article-text">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <div class="author-profile-container">
+          <img
+            src="./images/avatar-michelle.jpg"
+            alt="Avatar of Michelle Appleton"
+            class="author-img"
+          />
+          <div class="name-container">
+            <p class="author-name">Michelle Appleton</p>
+            <p id="date" class="date">28 Jun 2020</p>
+          </div>
+          <button
+            id="share-icon__button"
+            class="share-icon__container"
+            onclick="showDiv()"
+          >
+            <img
+              src="./images/icon-share.svg"
+              alt="Article share icon"
+              id="share-icon"
+            />
+          </button>
+        </div>
+        <div id="social-icons-container">
+          <p class="share-text">share</p>
+          <img
+            src="./images/icon-facebook.svg"
+            alt="facebook icon"
+            class="social-icon"
+          />
+          <img
+            src="./images/icon-twitter.svg"
+            alt="twitter icon"
+            class="social-icon"
+          />
+          <img
+            src="./images/icon-pinterest.svg"
+            alt="pinterest icon"
+            class="social-icon"
+          />
+          <button
+            class="share-icon__container share-icon__bottom-container"
+            onclick="hideDiv()"
+          >
+            <img
+              src="./images/icon-share.svg"
+              alt="share icon"
+              id="share-icon"
+              class="share-icon__bottom"
+            />
+          </button>
+        </div>
+      </div>
+    </main>
 
     <script src="./JS/script.js"></script>
   </body>
